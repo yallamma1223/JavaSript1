@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print the Max number</title>
+
+</head>
+
+<body>
+    <p id="result"></p>
+    <script>
+        let arr = [5, 10, 20, 3, 98, 95];
+        let largest = arr[0];
+        function largestNumber() {
+            for (let i = 1; i < arr.length; i++) {
+                if (arr[i] > largest)
+                    largest = arr[i];
+            }
+            document.getElementById('result').innerHTML = "The largest element of the array is: " + largest;
+        }
+        largestNumber();
+    </script>
+</body>
+
+</html>
